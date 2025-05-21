@@ -8,6 +8,7 @@ public class Review20 {
         int sum  = 0;
         while (i <= num) {
             sum += i;
+            i++;
         }
         System.out.println(sum);
     }
