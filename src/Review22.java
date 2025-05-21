@@ -10,6 +10,7 @@ public class Review22 {
             if (i % 2 != 0) {
                 sum += i;
             }
+            i++;
         }
         System.out.println(sum);
     }
