@@ -8,6 +8,7 @@ public class Review23 {
         int i = 1;
         while (i <= num) {
             factorial *= i;
+            i++;
         }
         System.out.println(factorial);
     }
