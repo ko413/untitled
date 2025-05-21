@@ -9,6 +9,6 @@ public class Review20 {
         while (i <= num) {
             sum += i;
         }
-        System.out.println(num);
+        System.out.println(sum);
     }
 }
