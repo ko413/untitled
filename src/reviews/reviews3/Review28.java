@@ -1,0 +1,23 @@
+package reviews.reviews3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Review28 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("宛先を入力>");
+        String to = br.readLine();
+        System.out.println("件名を入力>");
+        String subject = br.readLine();
+        System.out.println("本文を入力>");
+        String body = br.readLine();
+        Email email = new Email();
+        if(subject != null && !subject.isEmpty()) {
+            email.send(to, subject, body);
+        }else {
+            email.send(to, body);
+        }
+    }
+}
